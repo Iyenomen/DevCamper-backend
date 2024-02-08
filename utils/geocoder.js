@@ -9,6 +9,7 @@ const options = {
 };
 
 const geocoder = NodeGeocoder(options);
+// const geocoder = opencage();
 
 module.exports = geocoder;
 

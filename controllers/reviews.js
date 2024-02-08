@@ -44,7 +44,7 @@ exports.getReview = asyncHandler(async (req, res, next) => {
      success: true,
      data: review
   });
-
+});
  // @desc   Add review
 // @route  POST/api/v1/reviews/:id
 // @access Private
@@ -73,7 +73,7 @@ exports.addReview = asyncHandler(async (req, res, next) => {
 });
 
 
-});
+
 
 // @desc   Update review
 // @route  PUT/api/v1/reviews/:id

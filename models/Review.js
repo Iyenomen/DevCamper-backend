@@ -37,7 +37,7 @@ const ReviewSchema = new mongoose.Schema({
 ReviewSchema.index({ bootcamp: 1, user: 1 }, {unique: true}); 
 
 // Static method to get the avg rating and save
-CourseSchema.statics.getAverageRating = async function(bootcampId) {
+ReviewSchema.statics.getAverageRating = async function(bootcampId) {
 
     const obj = await this.aggregate([
         {
